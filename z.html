@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>逐帧动画</title>
+	<style>
+		@keyframes hua{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -438px 0px;
+			}
+		}
+		.a{
+			width: 73px;
+			height: 119px;
+			background: url('imgs/hua.jpg') left no-repeat;
+			animation: hua 2s steps(6) infinite;
+		}
+		@keyframes loading{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -800px 0;
+			}
+		}
+		.b{
+			width: 100px;
+			height: 100px;
+			background: url('imgs/loading.png') left no-repeat;
+			animation: loading 2s steps(8)  infinite;
+		}
+		@keyframes run{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -1680px 0;
+			}
+		}
+		.c{
+			width: 140px;
+			height: 140px;
+			background: url('imgs/urn.png') left no-repeat;
+		}
+		@keyframes walk{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -1080px 0;
+			}
+		}
+		.d{
+			width: 180px;
+			height: 293px;
+			background: url('imgs/walk.jpg')left no-repeat;
+			animation: walk 1s steps(6) infinite;
+		}
+		@keyframes run2{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: -1372px 0;
+			}
+		}
+		.e{
+			width: 137.2px;
+			height: 156px;
+			background: url('imgs/run2.png') left no-repeat;
+			animation: run2 1s steps(10) infinite;
+		}
+		@keyframes jd{
+			0%{
+				background-position: 0 0;
+			}
+			100%{
+				background-position: 0 -2045px;
+			}
+		}
+		.e{
+			width: 662px;
+			height: 681px;
+			background: url('imgs/jd.png') left no-repeat;
+			animation: jd 2s steps(3) infinite;
+		}
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+	<div class="e"></div>
+	<div class="f"></div>
+</body>
+</html>
